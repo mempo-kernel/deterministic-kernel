@@ -40,8 +40,8 @@ echo "Starting build in $linuxdir"
 	config_id=`sha256sum .config | cut -d" " -f1`
 	echo "Using .config with ID=$config_id"
 
-	bash
-	make menuconfig
+	#bash
+	#make menuconfig
 
 	echo ""
 	echo "=== BUILD MAIN ================================="
