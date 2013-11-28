@@ -1,10 +1,11 @@
-Needed packages:
-apt-get install faketime git build-essential libncurses5-dev libncursesw5-dev kernel-package md5deep gcc-4.7-plugin-dev -y  
+Install needed packages (as root):
+$ apt-get install faketime git build-essential libncurses5-dev libncursesw5-dev kernel-package md5deep gcc-4.7-plugin-dev -y  
 
 Download tools:
-git clone git@github.com:Happuri/deterministic-kernel.git
+$ git clone git@github.com:Happuri/deterministic-kernel.git && cd deterministic-kernel
 
-Compile:
-./run.sh
+Important: You must run compilation every time in the same directory path (You can create user for this) e.g. /home/kernel-builder/
+Run script:
+$ ./run.sh
 
-Important: You must run compilation every time in the same path (You can create user for this) e.g. /home/kernel-builder/
+Script run.sh downloads kernel linux-3.2.52 and grsecurity-3.0-3.2.52-201311261520.patch and run compilation using faketime
