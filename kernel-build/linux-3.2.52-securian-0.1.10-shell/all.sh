@@ -5,6 +5,6 @@
 
 echo "Rebuilding everything"
 
-#bash get-sources.sh || exit 
+bash get-sources.sh || exit 
 bash build-run.sh || exit
 
